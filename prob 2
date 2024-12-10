@@ -1,0 +1,5 @@
+Find the minnimum number of arrows to burst ballooons. Given a set of balloons each represented by a range start, end find the minimum number of arrows required to burst all the balloons. An arrow can burst multiple balloons if they overlap.
+
+{{10, 16}, {2, 8}, {1, 6}, {7, 12}}
+
+sample output: min required arrows = 2
