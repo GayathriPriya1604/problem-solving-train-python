@@ -1,13 +1,7 @@
-def findMinArrow(points):
-    points.sort()
-    maxVal = 0
-    lastVal = float('-inf')
-    for p in points:
-        if lastVal < p[0]:
-            lastVal = p[1]
-            maxVal += 1
-        else:
-            lastVal = min(lastVal, p[1])
-    return maxVal
-points = [[10, 16], [2, 8], [1, 6], [7, 12]]
-print(findMinArrow(points))
+Find the minnimum number of arrows to burst ballooons. Given a set of balloons each
+represented by a range start, end find the minimum number of arrows required to burst all the balloons.
+An arrow can burst multiple balloons if they overlap. 
+
+sample input: {{10, 16}, {2, 8}, {1, 6}, {7, 12}}
+
+sample output: min required arrows = 2
